@@ -1,0 +1,104 @@
+Week 1 Day 2 Assignments:
+Question 1.1 What are the Open AI Multimodels?
+Ans: Multimodal = models that can handle multiple types of input/output, such as:
+Text
+Images
+Audio (speech)
+(in some cases) video
+1. GPT-5.4 (and variants)
+Examples: gpt-5.4, gpt-5.4-mini, gpt-5.4-nano
+Capabilities:
+Text + Image input
+Text output
+Vision understanding
+Function calling, structured output 
+2. GPT-4.1 family
+Examples: gpt-4.1, gpt-4.1-mini
+Capabilities:
+Text + Image understanding
+Strong general-purpose AI
+
+3. GPT-4o (Omni model)
+Examples: gpt-4o, gpt-4o-mini
+Capabilities:
+Text + Image + Audio (real-time)
+Voice conversations
+Speech input/output
+
+4. GPT Image models (visual multimodal)
+Examples:
+gpt-image-1
+gpt-image-1.5
+Capabilities:
+Text → Image generation
+Image editing + understanding
+
+5. DALL·E models (specialized multimodal)
+Examples:
+dall-e-3
+dall-e-2
+Capabilities:
+Text → Image generation
+
+6. Whisper (audio multimodal)
+Example:
+whisper-1
+Capabilities:
+Speech → Text
+Translation
+Question 1.2 Groq Multimodel?
+Ans: Groq
+Llama models
+GPT-OSS models
+Whisper models
+
+Question 2: Take 3 models from each service provider https://openrouter.ai/models : Context window,Input output token cost
+Ans :1. OpenAI Model
+ openai/gpt-5.4
+Context window: ~1,050,000 tokens
+Input cost: $2.50 / 1M tokens
+Output cost: $15 / 1M tokens
+Type: Multimodal (text + image)
+ Best for:
+Long-context reasoning
+Coding + agents
+Enterprise workflows
+
+ 2. Meta (Llama) Model
+ meta-llama/llama-3.1-8b-instruct
+Context window: ~128K tokens (typical for this class)
+Input cost: $0.02 / 1M tokens
+Output cost: $0.05 / 1M tokens
+Type: Text model (fast, low cost)
+Best for:
+Cheap automation
+High-volume API testing
+Lightweight agents
+
+3. Google Model
+google/gemini-3.1-flash-lite-preview
+Context window: ~1,048,576 tokens
+Input cost: $0.25 / 1M tokens
+Output cost: $1.50 / 1M tokens
+Type: Multimodal (text + audio + reasoning)
+Best for:
+Cost-efficient large context
+Data extraction / RAG
+Multimodal pipelines
+Question 3:
+Use the Tokenizer with different prompt and see how the tokens are generated
+https://platform.openai.com/tokenizer
+
+Ans: Prompt 1: Explain what an API is- has 6 tokens and 23 chars
+prompt 2: Explain what an API is in detail, including:
+1. Definition - has 14 tokens , 59 characters.
+prompt 3: Create a simple login API test case including
+POST /login
+{
+ "username": "test_user",
+ "password": "secure123"
+}
+Has 31 tokens, 115 chars.
+
+
+
